@@ -6,8 +6,8 @@
   --primary-line-height: 20px;
   --primary-letter-spacing: 0.02em;
 
-  --primary-text-color: black;
-  --secondary-text-color: grey;
+  --primary-text-color: grey;
+  --secondary-text-color: black;
   --accent-color: white;
 
   --secondary-background-color: black;
@@ -20,4 +20,14 @@ body {
   line-height: var(--primary-line-height);
   letter-spacing: var(--primary-letter-spacing);
   color: var(--primary-text-color);
+}
+
+h1,
+h2,
+h3,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
 }

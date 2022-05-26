@@ -19,7 +19,7 @@ export default function AppBar() {
           Articles
         </NavLink>
         <NavLink
-          to="/edit"
+          to="/editor"
           className={({ isActive }) => (isActive ? s.activeLink : s.link)}
         >
           Editor
