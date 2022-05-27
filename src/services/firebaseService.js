@@ -1,12 +1,14 @@
-import { ref, set } from 'firebase/database';
+import { ref, push, get } from 'firebase/database';
 import db from '../config/firebase';
 
+const articlesRef = ref(db, 'articles');
+
 export const getAll = () => {
-  return db;
+  return get(articlesRef);
 };
 
-export const create = data => {
-  set(ref(db, '/articles'), { data });
+export const create = (title, description, published) => {
+  push(articlesRef, { title, description, published });
 };
 
 export const update = (key, data) => {
