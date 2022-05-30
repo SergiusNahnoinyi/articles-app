@@ -15,9 +15,7 @@ export const update = (key, data) => {
   return db.child(key).update(data);
 };
 
-export const remove = key => {
-  return db.child(key).remove();
-};
+export const removeArticle = activeArticle => {};
 
 export const removeAll = () => {
   return db.remove();
